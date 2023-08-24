@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Neroli</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Neroli</h1>
+        <ul class="navbar">
+          <li>Парфюм</li>
+          <li>Ноты</li>
+          <li>Новости</li>
+          <li>О нас</li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="bubbles">
+      <button class="reset-notes">Сбросить фильтрацию</button>
+      <div
+        style="opacity: 0.8; font-style: italic; width: 100%"
+        class="selected-category"
+      ></div>
+    </div>
+
+    <div class="listing">
+      <section
+        class="filter-panel"
+        style="border: 1px solid black; padding: 10px"
+      >
+        <div class="filter-category">
+          <h3>Пожелания</h3>
+          <ul>
+            <li data-f="neroli-grape">Хочу пахнуть богато</li>
+            <li data-f="lalique">Хочу ощущений будто лес после дождя</li>
+            <li data-f="neroli">Хочу аромат березового леса</li>
+          </ul>
+        </div>
+
+        <div class="filter-category">
+          <h3>Ноты</h3>
+          <div class="expandable">
+            <label><input type="checkbox" value="neroli" />Ананас</label>
+            <label><input type="checkbox" value="neroli" />Бергамот</label>
+            <label
+              ><input type="checkbox" value="neroli" />Черная смородина</label
+            >
+            <label><input type="checkbox" value="neroli" />Яблоко</label>
+            <label><input type="checkbox" value="neroli" />Береза</label>
+            <label><input type="checkbox" value="neroli" />Пачули</label>
+            <label
+              ><input type="checkbox" value="neroli" />Марокканский
+              жасмин</label
+            >
+            <label><input type="checkbox" value="neroli" />Роза</label>
+            <label><input type="checkbox" value="neroli" />Мускус</label>
+            <label><input type="checkbox" value="neroli" />Дубовый мох</label>
+            <label><input type="checkbox" value="neroli" />Серая амбра</label>
+            <label><input type="checkbox" value="neroli" />Ваниль</label>
+            <label
+              ><input type="checkbox" value="neroli-grape" />Грейпфрукт</label
+            >
+            <label
+              ><input type="checkbox" value="neroli-grape" />Ambroxan</label
+            >
+            <label
+              ><input type="checkbox" value="neroli-grape" />Древесные
+              ноты</label
+            >
+            <label><input type="checkbox" value="lalique" />Кипарис</label>
+            <label><input type="checkbox" value="lalique" />Ветивер</label>
+            <label
+              ><input type="checkbox" value="lalique" />Кашемировое
+              дерево</label
+            >
+            <label><input type="checkbox" value="lalique" />Мускус</label>
+          </div>
+          <div class="buttons-show">
+            <div class="show-more">Показать ещё</div>
+            <div class="show-hide">Скрыть</div>
+          </div>
+        </div>
+
+        <div class="filter-category">
+          <h3>Аккорды</h3>
+          <div class="expandable-accords">
+            <label
+              ><input
+                type="checkbox"
+                value="neroli-grape lalique"
+              />Древесный</label
+            >
+            <label><input type="checkbox" value="lalique" />Фужерный</label>
+            <label><input type="checkbox" value="lalique" />Землистый</label>
+            <label
+              ><input
+                type="checkbox"
+                value="lalique neroli-grape neroli"
+              />Мускусный</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="neroli-grape neroli"
+              />Цитрусовый</label
+            >
+            <label
+              ><input type="checkbox" value="neroli-grape" />Амбровый</label
+            >
+            <label><input type="checkbox" value="neroli-grape" />Пряный</label>
+            <label><input type="checkbox" value="neroli" />Фруктовый</label>
+            <label><input type="checkbox" value="neroli" />Сладкий</label>
+            <label><input type="checkbox" value="neroli" />Кожаный</label>
+            <label><input type="checkbox" value="neroli" />Дымный</label>
+            <label><input type="checkbox" value="neroli" />Тропический</label>
+            <label><input type="checkbox" value="neroli" />Свежий</label>
+            <label><input type="checkbox" value="neroli" />Мшистый</label>
+          </div>
+          <div class="buttons-show">
+            <div class="show-more-accords">Показать ещё</div>
+            <div class="show-hide-accords">Скрыть</div>
+          </div>
+        </div>
+
+        <div class="filter-category">
+          <h3>Стойкость</h3>
+          <ul>
+            <li data-f="neroli">Средний</li>
+            <li data-f="lalique neroli-grape">Стойкий</li>
+            <li>Вечный</li>
+          </ul>
+        </div>
+
+        <div class="filter-category">
+          <h3>Шлейф</h3>
+          <ul>
+            <li>Интимный</li>
+            <li data-f="lalique neroli">Средний</li>
+            <li data-f="neroli-grape">Заметный</li>
+          </ul>
+        </div>
+      </section>
+
+      <section style="border: 1px solid black">
+        <h4 class="nothing">Пока что нет товара по выбранной категории</h4>
+        <div class="neroli box">
+          <h4>Neroli</h4>
+        </div>
+
+        <div class="neroli-grape box">
+          <h4>Neroli Grape</h4>
+        </div>
+
+        <div class="lalique box">
+          <h4>Noire Lalique</h4>
+        </div>
+      </section>
+    </div>
+
+    <section>
+      <div class="down-footer">© Neroli Perfume 2023</div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>

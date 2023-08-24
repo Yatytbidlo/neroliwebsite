@@ -1,0 +1,206 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav {
+  background-color: rgb(43, 43, 43);
+  display: flex;
+  padding: 20px 0px;
+}
+nav h1 {
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+.navbar {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr 0.8fr;
+  grid-gap: 80px;
+  color: white;
+}
+.navbar li {
+  text-align: center;
+  line-height: 27.2px;
+  cursor: pointer;
+}
+
+li {
+  cursor: pointer;
+}
+
+li:hover {
+  opacity: 0.5;
+}
+
+.filter-category {
+  margin-bottom: 10px;
+  border: thick double #a9a9a9;
+  padding: 5px;
+}
+
+.show-more,
+.show-hide {
+  cursor: pointer;
+  color: white;
+  transition: opacity 1s ease; /* Добавляем анимацию плавного перехода */
+  opacity: 1; /* Начальное значение прозрачности */
+  padding: 5px;
+  margin: 10px 0px 5px 0px;
+  border-radius: 25px;
+  background-color: rgb(43, 43, 43);
+  width: 40%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.show-hide {
+  display: none;
+  color: white;
+  width: 30%;
+}
+
+.show-more-accords,
+.show-hide-accords {
+  cursor: pointer;
+  color: #ffffff;
+  transition: opacity 1s ease; /* Добавляем анимацию плавного перехода */
+  opacity: 1;
+  padding: 5px;
+  margin: 10px 0px 5px 0px;
+  border-radius: 25px;
+  background-color: rgb(43, 43, 43);
+  width: 40%;
+  font-size: 14px;
+  text-align: center;
+}
+
+.show-hide-accords {
+  display: none;
+  color: white;
+  width: 30%;
+}
+
+.buttons-show {
+  display: flex;
+}
+
+.expandable {
+  max-height: 153px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.expandable-accords {
+  max-height: 155px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.listing {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+}
+
+.box {
+  border: 3px solid black;
+  border-radius: 5px;
+  margin: 15px;
+  min-height: 140px;
+  min-width: calc(22% - 28px);
+  float: left;
+  text-align: center;
+  line-height: 140px;
+}
+
+.hide {
+  opacity: 1;
+  animation-name: filter;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes filter {
+  to {
+    opacity: 0;
+    min-height: 0;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    display: none;
+  }
+}
+.delete {
+  display: none;
+}
+
+.nothing {
+  display: none;
+}
+
+.show {
+  margin: 10px 0px 0px 15px;
+  opacity: 0.6;
+  display: block;
+}
+
+.down-footer {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  background-color: rgb(43, 43, 43);
+  color: #7c7c7c;
+}
+
+.bubbles {
+  border: 1px solid black;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 3.5fr;
+  align-items: baseline;
+  justify-items: center;
+}
+
+.expandable li.active {
+  background-color: rgb(43, 43, 43);
+  padding: 5px;
+  border-radius: 25px;
+  color: white;
+}
+
+.expandable-accords li.active {
+  background-color: rgb(43, 43, 43);
+  padding: 5px;
+  border-radius: 25px;
+  color: white;
+}
+
+.reset-notes {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: 80%;
+  font-size: 16px;
+  background-color: rgb(43, 43, 43);
+  color: white;
+  cursor: pointer;
+}
+.reset-notes:hover {
+  opacity: 0.9;
+}
+
+/*# sourceMappingURL=style.css.map */
